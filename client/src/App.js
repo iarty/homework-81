@@ -34,7 +34,9 @@ const App = () => {
       {!!Object.keys(link).length && (
         <div className="mt-5">
           <h2>Your link now looks like this:</h2>
-          <a>{`http://localhost:8000/${link.short}`}</a>
+          <a
+            href={`http://localhost:8000/${link.short}`}
+          >{`http://localhost:8000/${link.short}`}</a>
         </div>
       )}
     </div>
